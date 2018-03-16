@@ -4,32 +4,124 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Animated Background Headers | Demo 1</title>
+		<title>Anson's Personal Website</title>
 		<meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
 		<meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
 		<meta name="author" content="Codrops" />
+		
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type ="text/css" href ="charityDAOweb/css/theme-nearblack.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-		<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	</head>
-	<body>
-		<div class="container demo-1">
-			<div class="content">
-				<div id="large-header" class="large-header">
-					<canvas id="demo-canvas"></canvas>
-				</div>
-			</div>
 
+	<body>
+		<div class="main-container">
+
+			<div class="nav-container" style="min-height: 55px;">
+			<a id ="top"></a>
+			<nav class="">
+				<div class ="nav-bar">
+				<div class="module widget-handle mobile-toggle right visible-sm visible-xs"
+				style="margin-top: 10px; border-left: white; border: none; border-left: none;">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17" style="border:none;">
+<g>
+</g>
+	<path d="M16 3v2h-15v-2h15zM1 10h15v-2h-15v2zM1 15h15v-2h-15v2z" fill="#000000"></path>
+</svg>
+			</div>
 			
-		</div><!-- /container -->
+			<div class="module-group right">
+				<div class="module left">
+					<ul class="menu">
+						<li class="active">
+							<a href="/" class ="bold" style=" font-size: 12px;">
+								Home
+							</a>
+						</li>
+
+						<li class="bold">
+							<a href="/" class="bold" style="font-size: 12px;">
+								About
+							</a>
+						</li>
+						<li class="bold">
+							<a href="/" class="bold" style="font-size: 12px;">
+								Projects
+							</a>
+						</li>
+						<li class="bold">
+							<a href="/" class="bold" style="font-size: 12px;">
+								Contact
+							</a>
+
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!--end nav bar-->
+			</nav>
+		</div><!--end nav container-->
+
+
+		<div class="main-container">
+
+			<section class="cover fullscreen parallax image-bg" style="height:864px;">
+					<div class="background-image-holder fadeIn" style="transform: translate3d(0px, 0px, 0px); background: url(&quot;img/background.jpg&quot;); top: -55px;">
+
+						<div class="background-image" src="./img/background.jpg" style="display: none;">
+						</div>
+
+					<div class="container v-align-transform">
+						<div class="row">
+							<h1 class="uppercase large mb8">
+								<strong>Anson</strong>Tang</h1>
+							<h5 class="mbO">University of Waterloo </br>Computer Engineering</h5>
+						</div>	
+					</div>
+
+						<div id="background-image" class="background-image">
+							<canvas id="demo-canvas"></canvas>
+						</div>
+					<!--end of row-->
+		
+		</div>
+		<!--end of container-->
+
+		<div class="align-bottom text-center">
+			<ul class="list-inline social-list mb24">
+				<li>
+					<a target="_blank" href="https://www.facebook.com/ansontang216">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+
+				<li>
+					<a target="_blank" href="https://www.linkedin.com/in/anson-tang-aa88a4150/">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</li>
+
+				<li>
+					<a target="_blank" href="https://www.instagram.com/ansontang216/">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
 		<script src="js/rAF.js"></script>
 		<script src="js/demo-1.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/jquery.min.js"></script>
 	</body>
 </html>
