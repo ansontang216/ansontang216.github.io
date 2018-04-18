@@ -1,16 +1,27 @@
+.container {
+  margin-bottom: 600px;
+}
+
+.hero {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.hero-foot {
+  margin-bottom: 25px;
+}
 .navbar-menu {
   position: absolute;
   left: 50%;
-  margin-left: -155px;
+  margin-left: -115px;
   height: 100%;
   align-items: center;
   flex-shrink: 0;
   flex-grow: 1;
 }
 
-.icons {
-  display: flex;
-  justify-content: space-between;
+li {
+  display: inline;
+  padding: 20px;
 }
 
 .navbar-item {
