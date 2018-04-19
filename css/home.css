@@ -9,14 +9,12 @@
 .hero-foot {
   margin-bottom: 25px;
 }
+
 .navbar-menu {
   position: absolute;
   left: 50%;
   margin-left: -115px;
   height: 100%;
-  align-items: center;
-  flex-shrink: 0;
-  flex-grow: 1;
 }
 
 li {
@@ -40,17 +38,4 @@ hr {
   align-items: stretch;
   display: flex;
   padding: 0;
-}
-
-.navbar-start {
-  margin-right: auto;
-  justify-content: flex-start;
-}
-.navbar-end {
-  margin-left: auto;
-  justify-content: flex-end;
-}
-
-.navbar .container {
-  display: flex;
 }
