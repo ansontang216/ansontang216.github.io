@@ -239,6 +239,14 @@ hr.short-thick {
   right: 0;
   z-index: 2;
 }
+
+div.transbox {
+    margin: 100px;
+    background-color: black;
+    border: 1px solid black;
+    opacity: 0.5;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
 /*!---------- 3. TYPOGRAPHY ----------*/
 @media all and (max-width: 767px) {
   .text-center-xs {
@@ -4442,8 +4450,7 @@ video {
 .image-square > .content {
   padding: 0 10%;
   top: 50%;
-  transform: translate3d(0, -50%, 0);
-  -webkit-transform: translate3d(0, -50%, 0);
+  
   -moz-transform: translate3d(0, -50%, 0);
 }
 .image-square.left .image {
