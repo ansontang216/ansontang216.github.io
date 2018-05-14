@@ -40,6 +40,14 @@
  36. Spacing
 
 /*!---------- 1. GLOBAL STYLES ----------*/
+div.transbox {
+  margin: 10px;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -238,14 +246,6 @@ hr.short-thick {
   left: 0;
   right: 0;
   z-index: 2;
-}
-
-div.transbox {
-    margin: 100px;
-    background-color: black;
-    border: 1px solid black;
-    opacity: 0.5;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 /*!---------- 3. TYPOGRAPHY ----------*/
 @media all and (max-width: 767px) {
@@ -447,7 +447,6 @@ a:hover {
 }
 a {
   font-weight: 600;
-  color: #13181d;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -867,7 +866,7 @@ body.btn-rounded .btn {
   max-width: 100%;
 }
 nav {
-  background: #ffffff ;
+  background: #fff;
   -webkit-backface-visibility: hidden;
   max-width: 100%;
 }
@@ -1752,7 +1751,7 @@ input.transparent,
 button.transparent {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff !important	;
+  color: #fff !important  ;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
@@ -2581,7 +2580,7 @@ button[type="submit"] .form-loading {
   .page-title-4 .breadcrumb,
   .page-title-2 .breadcrumb {
     float: left;
-    margin-top: 8	px;
+    margin-top: 8 px;
   }
 }
 /*!---------- 17. PAGINATION ----------*/
@@ -3032,11 +3031,7 @@ button[type="submit"] .form-loading {
 }
 .widget .cart-overview li {
   margin-bottom: 24px;
-  overflow
-
-
-
-  : hidden;
+  overflow: hidden;
 }
 .widget .cart-overview li:last-child {
   margin-bottom: 0;
@@ -4341,15 +4336,6 @@ video {
   }
 }
 /*!---------- 29. IMAGE BLOCKS ----------*/
-
-.image-xl {
-  max-height: 300px;
-}
-
-.image-large {
-  max-height:250px;
-}
-
 .image-md {
   max-height: 120px;
 }
@@ -4450,7 +4436,8 @@ video {
 .image-square > .content {
   padding: 0 10%;
   top: 50%;
-  
+  transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
   -moz-transform: translate3d(0, -50%, 0);
 }
 .image-square.left .image {
@@ -4480,7 +4467,7 @@ video {
     margin-bottom: 48px;
     max-height: 500px;
   }
-  .x-square > .content {
+  .image-square > .content {
     top: 0;
     transform: none;
     -webkit-transform: none;
